@@ -15,3 +15,7 @@ http://localhost:${port}`); });
 for="username">Username:</label> <input type="text" id="username"
 name="username" required> <button type="submit">Submit</button> </form>
 </body> </html>
+post('/submit-form' , (req, res) => {
+const Submitted = req.body.Submitted; // access form data
+
+res.send('Form Submitted');
